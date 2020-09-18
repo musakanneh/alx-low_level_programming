@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints out all possible combos of 3 digits
+ * main - possible combos of 3 digits
  *
  * Return (0)
  */
