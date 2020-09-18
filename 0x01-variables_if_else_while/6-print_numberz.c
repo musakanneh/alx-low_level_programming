@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-int main(void){
-    int n = 48;
-    
-    while (n < 58){
-        putchar(n);
-        n++;
-    }
+int main(void)
+{
+	int n = 48;
 
-    putchar ('\n');
+	while (n < 58)
+	{
+		putchar(n);
+		n++;
+	}
+	putchar ('\n');
 
-    return (0);
+	return (0);
 }
