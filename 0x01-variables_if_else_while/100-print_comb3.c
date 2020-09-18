@@ -24,7 +24,6 @@ int main(void)
 			if (i == 56 && j == 57)
 			{
 				break;
-
 			}
 			else
 			{
