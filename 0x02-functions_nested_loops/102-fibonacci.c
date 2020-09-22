@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i, n;
-	int first_count, sec_count, next_num;
+	long first_count, sec_count, next_num;
 
 	first_count = 1;
 	sec_count = 2;
