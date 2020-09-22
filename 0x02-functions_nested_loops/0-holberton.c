@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * main - prints Holberton
+ * main - prints a word
  *
- * return (0)
+ * Description: just prints a statement
+ * Return: Always(0) Success
  */
 
 int main(void)
