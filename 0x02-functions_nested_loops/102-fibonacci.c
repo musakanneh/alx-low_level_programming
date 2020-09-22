@@ -3,6 +3,8 @@
 
 /**
  * main - prints first 50 numbers of the fibonacci sequence
+ *
+ * Description: prints from 1 to 50
  * Return: 0
  */
 
