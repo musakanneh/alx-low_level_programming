@@ -3,6 +3,7 @@
 /**
  * print_alphabet - prints all aphabets in lowercase
  *
+ * Description: Characters are sorted by default
  * Return: Always(0) Success
  */
 
