@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * print_alphabet - prints all aphabets in lowercase
+ * print_alphabet_x10 - prints alphabets 10
  *
- * Description: Characters are sorted by default
- * Return: Always(0) Success
+ * Description: prints 10 times
+ * Return: Always(0).
  */
 
 void print_alphabet_x10(void)
