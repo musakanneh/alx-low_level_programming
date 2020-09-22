@@ -8,10 +8,13 @@
 
 int main(void)
 {
-	char c = 'H';
+	char c[9] = "Holberton";
+	int i;
 
-	_putchar(c);
-
+	for (i = 0; i < 9; i++)
+	{
+		_putchar(holberton[i]);
+	}
 	_putchar('\n');
 
 	return (0);
