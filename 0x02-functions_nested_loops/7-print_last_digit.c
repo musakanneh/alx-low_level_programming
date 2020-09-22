@@ -2,9 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
+ * print_last_digit - prints the lest digit
+ * @n: first parameter
  *
- * Return: Always 0.
+ * Description: prints the last digit
+ * Return: Always (0).
  */
 
 int print_last_digit(int n)

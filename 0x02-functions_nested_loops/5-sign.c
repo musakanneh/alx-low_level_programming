@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * print_sign - prints the sign of a num
  * @n: integer to be tested
- * Return: Always 0.
+ *
+ * Description: checks signs of numbers
+ * Return: Always(0)
  */
 
 int print_sign(int n)

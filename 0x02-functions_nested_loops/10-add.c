@@ -1,9 +1,12 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * add - add two numbers from input
+ * @a: first aparamet
+ * @b: second parameter
  *
- * Return: Always 0.
+ * Description: adds two numbers
+ * Return: Always (0).
  */
 
 int add(int a, int b)

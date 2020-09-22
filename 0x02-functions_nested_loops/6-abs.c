@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _abs - prints te absolute value
+ * @n: input parameter
  * Return: Always 0.
  */
 

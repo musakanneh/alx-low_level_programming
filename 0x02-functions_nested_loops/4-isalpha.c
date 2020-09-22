@@ -2,9 +2,11 @@
 #include <ctype.h>
 
 /**
- * main - check the code for Holberton School students.
+ * _isalpha - prints 1 or 0 depending on input
+ * @c: collects a char type
  *
- * Return: Always 0.
+ * Description: Checks for alphabets lower and uppercase
+ * Return: Always(0).
  */
 
 int _isalpha(int c)

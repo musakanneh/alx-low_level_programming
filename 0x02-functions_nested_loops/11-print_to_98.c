@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- * 
- * Return: Always 0.
+ * print_to_98 - prints numbers to 98
+ * @n: first parameter
+ *
+ * Description: prints all num to 98
+ * Return: Always (0).
  */
 
 void print_to_98(int n)
