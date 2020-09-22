@@ -3,6 +3,7 @@
 /**
  * main - check the code for Holberton School students.
  *
+ * @n: integer to be tested
  * Return: Always 0.
  */
 
@@ -18,9 +19,11 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	_putchar('-');
-	_putchar('1');
-	return (-1);
+	else
+	{
+		_putchar ('-');
+		return (-1);
+	}
 }
 
 
