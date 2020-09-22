@@ -8,8 +8,7 @@
 
 int main(void)
 {
-	int i, n;
-	long first_count, sec_count, next_num;
+	int i, n, first_count, sec_count, next_num;
 
 	first_count = 1;
 	sec_count = 2;
