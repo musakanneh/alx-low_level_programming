@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdlib.h>
 
 /**
  * print_last_digit - prints the lest digit
@@ -15,7 +14,7 @@ int print_last_digit(int n)
 
 	last_digit = n % 10;
 
-	if (last_dight < 0)
+	if (last_digit < 0)
 	{
 		last_digit *= -1;
 	}
