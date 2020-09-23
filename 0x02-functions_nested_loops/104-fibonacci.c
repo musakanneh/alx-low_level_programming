@@ -23,7 +23,7 @@ int main(void)
 		else
 		{
 			printf("%d, ", num2);
-			next_fib = num1 + num2;
+			next_num = num1 + num2;
 			num1 = num2;
 			num2 = next_num;
 		}
