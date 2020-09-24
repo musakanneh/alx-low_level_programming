@@ -17,7 +17,7 @@ int main(void)
 	{
 		while (n % i == 0)
 		{
-			 n = n / i;
+			n = n / i;
 		}
 	}
 	printf("%d", d);
