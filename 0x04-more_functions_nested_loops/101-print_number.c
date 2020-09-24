@@ -1,8 +1,10 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
  * print_number - print number
+ * @n: input value
  *
+ * Description:  prints an integer
  * Return: Always (0)
  */
 
