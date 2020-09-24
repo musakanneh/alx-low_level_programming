@@ -9,5 +9,9 @@
 
 int _isupper(int c)
 {
-	return (c == 'a' || c == 'A');
+	if ((c == 'a') || (c == 'A'))
+	{
+		return (1);
+	}
+	return (0);
 }
