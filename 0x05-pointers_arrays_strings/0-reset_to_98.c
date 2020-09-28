@@ -1,4 +1,4 @@
-#indlude "holberton.h"
+#include "holberton.h"
 
 /**
  * reset_to_98 - reset to 98
@@ -10,5 +10,10 @@
 
 void reset_to_98(int *n)
 {
+	int *num;
 	
+	int x = 98;
+
+	num = &x;
+	*n = *num;
 }
