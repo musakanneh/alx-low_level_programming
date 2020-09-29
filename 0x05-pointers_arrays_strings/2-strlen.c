@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strlen - string lenght
+ * _strlen - returns lenght of string
+ * @s: input parameter
  *
- * Description: returns the length of a string
+ * Description: uses pointers
  * Return: Alawy (0)
  */
 
