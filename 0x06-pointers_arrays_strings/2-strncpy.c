@@ -7,7 +7,7 @@
  * @n: number of bytes
  *
  * Description: the function copies a string
- * Return: Always (0)
+ * Return: returns destination
  */
 
 char *_strncpy(char *dest, char *src, int n)

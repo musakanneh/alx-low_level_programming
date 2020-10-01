@@ -7,7 +7,7 @@
  * @n: number of butes to be used
  *
  * Description: use at most n bytes from src
- * Return: concatenated string
+ * Return: returns concatenated string
  */
 
 char *_strncat(char *dest, char *src, int n)
