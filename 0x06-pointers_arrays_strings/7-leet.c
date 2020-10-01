@@ -10,21 +10,20 @@
 
 char *leet(char *str)
 {
-	int i, j;
-
-	i = 0;
+	int i = 0, k;
 	char s[] = "aAeEoOtTlL";
 	char s1[] = "4433007711";
 
-	for ( ; str[i] != '\0'; ++i)
+	for (; str[i] != '\0'; i++)
 	{
-		for (j = 0; j <= 9; ++j)
+		for (k = 0; k <= 9; k++)
 		{
-			if (s[j] == str[i])
+			if (s[k] == str[i])
 			{
-				str[i] = s1[j];
+				str[i] = s1[k];
 			}
 		}
 	}
 	return (str);
 }
+
