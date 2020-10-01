@@ -15,15 +15,16 @@ char *leet(char *str)
 	char s[] = "aAeEoOtTlL";
 	char s1[] = "4433007711";
 
-	for ( ; str[i] != '\0' i++)
+	while (str[i] != '\0')
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = 0; j <= 9; ++j)
 		{
-			if (s[i] == s[j])
+			if (str[i] == s[j])
 			{
-				s[i] = s1[j];
+				str[i] = s1[j];
 			}
 		}
+		++i;
 	}
 	return (str);
 }
