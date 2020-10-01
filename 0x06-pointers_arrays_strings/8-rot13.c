@@ -2,6 +2,7 @@
 
 /**
  * rot13 - encode string
+ * @str: input string
  *
  * Description: encodes a string using rot13
  * Return: always (0)
@@ -9,17 +10,17 @@
 
 char *rot13(char *str)
 {
-	int i = 0, k;
+	int i = 0, j;
 	char s[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char s1[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (; str[i] != '\0'; i++)
 	{
-		for (k = 0; k <= 51; k++)
+		for (j = 0; j <= 51; j++)
 		{
-			if (s[k] == str[i])
+			if (s[j] == str[i])
 			{
-				str[i] = s1[k];
+				str[i] = s1[j];
 			}
 		}
 	}
