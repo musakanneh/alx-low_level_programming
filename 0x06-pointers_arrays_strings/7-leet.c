@@ -15,7 +15,7 @@ char *leet(char *str)
 	char s[] = "aAeEoOtTlL";
 	char s1[] = "4433007711";
 
-	while (str[i] != '\0')
+	for ( ; str[i] != '\0' i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
@@ -24,7 +24,6 @@ char *leet(char *str)
 				s[i] = s1[j];
 			}
 		}
-		i++;
 	}
 	return (str);
 }
