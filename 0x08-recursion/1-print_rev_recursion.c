@@ -11,21 +11,9 @@
 
 void _print_rev_recursion(char *s)
 {
-	int left, right, count;
-	
-	count = 0;
-	char rev[1000];
-	while (s[count] != '\0')
+	if (*s)
 	{
-		count++;
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
 	}
-	right = count - 1;
-
-	for (left = 0; left < count; left++)
-	{
-		rev[left] = s[right];
-		right--;
-	}
-	_putchar(rev);
-	_putchar('\n');
 }
