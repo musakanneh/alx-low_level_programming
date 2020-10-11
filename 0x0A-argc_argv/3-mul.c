@@ -19,6 +19,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", first_num * sec_num);
 		return (0);
 	}
-	printf ("Erro\n");
+	printf("Erro\n");
 	return (1);
 }
