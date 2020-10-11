@@ -10,15 +10,18 @@
 
 int main(int argc, char *argv[])
 {
-	int first_num, sec_num;
+	int i, first_num, sec_num, product;
 
-	if (argc == 3)
+	if (argc != 3)
+	{
+		return (printf("Erro\n"), 1);
+	}
+	for (i = 0; i < argc; i++)
 	{
 		first_num = atoi(argv[1]);
 		sec_num = atoi(argv[2]);
-		printf("%d\n", first_num * sec_num);
-		return (0);
 	}
-	printf("Erro\n");
-	return (1);
+	product = first_num * sec_num;
+	printf("%d\n", product);
+	return (0);
 }
