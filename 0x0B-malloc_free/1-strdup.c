@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[len] != '\0'; i++, len++)
+	for (i = 0; str[i] && str[len] != '\0'; i++, len++)
 	{
 		duplicate_num[i] = str[i];
 	}
