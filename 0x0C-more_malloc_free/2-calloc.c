@@ -8,8 +8,7 @@
  * @nmemb: first input parameter
  * @size: second input parameter
  *
- * Description: function that allocates memory for an array
- * Return: Always(0) Success
+ * Return: pointer
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -17,12 +16,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *pointer;
 	unsigned int i;
 
-	if (!nmemb || !size)
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	pointer = malloc(size * nmemb);
-	if (!pointer)
+	pointer = malloc(nmemb * size);
+	if (pointer == NULL)
 	{
 		return (NULL);
 	}
