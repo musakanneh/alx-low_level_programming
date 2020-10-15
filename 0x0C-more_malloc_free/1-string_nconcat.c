@@ -1,55 +1,38 @@
 #include "holberton.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * string_nconcat - a function that concatenates two strings
- * @s1: first parameter
- * @s2: second parameter
- * @n: third parameter
- *
- * Return: Always(0) Success
+ * string_nconcat - concatenates two strings
+ * @s1: destination string
+ * @s2: source string
+ * @n: number of bytes from s2 to be copied
+ * Return: concatenated string
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *pointer;
-	unsigned int len1, len2, count;
-
+	char *p;
+	unsigned int t1, t2, i;
 
 	if (s1 == NULL)
-	{
-		s1 = "";
-	}
+		t1 = 0;
+	for (t1 = 0; s1[t1]; ++t1)
+		;
 	if (s2 == NULL)
-	{
-		s2 = "";
-	}
-	for (len1 = 0; s1[len1] != '\0'; len1++)
-	{
+		t2 = 0;
+	for (t2 = 0; s2[t2]; ++t2)
 		;
-	}
-	for (len2 = 0; s2[len2] != '\0'; len2++)
-	{
-		;
-	}
-	pointer = malloc(len1 + len2 + 1);
-	if (n >= len2)
-	{
-		n = len2;
-	}
-	for (count = 0; s1[count] != '\0'; count++)
-	{
-		pointer[count] = s1[count];
-	}
-	for (count = 0; count < n; count++)
-	{
-		pointer[len1 + count] = s2[count];
-	}
-	pointer[len1 + n] = '\0';
-	if (!pointer)
-	{
+	if (t2 > n)
+		t2 = n;
+	p = malloc((t1 + t2 + 1) * sizeof(char));
+	if (p == NULL)
 		return (NULL);
-	}
-	return (pointer);
+	for (i = 0; i < t1; i++)
+		p[i] = s1[i];
+	for (i = 0; i < t2; i++)
+		p[t1 + i] = s2[i];
+	p[t1 + t2] = '\0';
+	return (p);
 }
+
