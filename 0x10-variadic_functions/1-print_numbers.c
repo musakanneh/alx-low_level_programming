@@ -10,25 +10,17 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	register unsigned int i;
-	va_list numbers;
+	va_list x;
 
-	va_start(numbers, n);
+	va_start(x, n);
 	if (!(*separator))
 	{
 		return;
 	}
 	for (i = 0; i < n; i++)
 	{
-		if (separator && i != n - 1)
-		{
-			printf("%d", va_arg(numbers, unsigned int));
-			printf("%s", separator);
-		}
-		else
-		{
-			printf("%d", va_arg(numbers, unsigned int));
-		}
+		printf("%i%s", va_arg(x, int), (separator && i != n - 1) ? separator : "");
 	}
-	va_end(numbers);
+	va_end(x);
 	printf("\n");
 }
