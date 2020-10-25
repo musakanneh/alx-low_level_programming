@@ -3,8 +3,8 @@
 
 /**
  * print_numbers - prints numbers
- * @separator: chars to separe numbers
- * @n: n for dynamic input
+ * @separator: character to separe numbers
+ * @n: n for number input
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)

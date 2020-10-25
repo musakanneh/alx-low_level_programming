@@ -4,7 +4,7 @@
 /**
  * main - check the code for Holberton School students.
  *
- * Return: Always 0.
+ * Return: 0 for success.
  */
 
 int main(void)

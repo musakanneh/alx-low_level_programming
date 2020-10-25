@@ -5,7 +5,7 @@
 /**
  * sum_them_all - sum given inputs
  * @n: input params
- * Return: sum of nums
+ * Return: sum of numbers
  */
 
 int sum_them_all(const unsigned int n, ...)
