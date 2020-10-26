@@ -1,13 +1,16 @@
-section		.text
+; Desc: 64-bit assembly program that prints
+;       Hello, Holberton followed by a new line.
+
+section .text
 	global	main
 
 main:
-	ov		edx,len	;pass length
-	mov		ecx,msg	;pass message
-	mov		ebx,1	;pass stdout
-	mov		eax,4	;pass call number for sys_write
-	int		0x80	;call kernel
+	mov rax, 1
+	mov rdi, 1
+	mov rsi, msg
+	mov rdx, 17
+	syscall
 
-	section		.data
-	msg	db 'Hello, Holberton',0xa
-	len equ $ - msg
+section .rodata
+	msg: db "Hello, Holberton", 0xa
+	len: equ $ - msg
