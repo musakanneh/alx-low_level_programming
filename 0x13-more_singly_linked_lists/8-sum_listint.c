@@ -2,7 +2,7 @@
 
 /**
  * sum_listint - a function that returns
- * the sum of all the data (n) in the list
+ * the sum of all the data (n) in the linked list
  * @head: head node
  * Return: The number of nodes in h.
  */

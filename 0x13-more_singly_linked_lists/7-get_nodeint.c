@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - prints elements of a list_t list.
+ * get_nodeint_at_index - prints elements of a list_t list
  * @head: head node
  * @index: index of the node, starting at 0
  * Return: the current node, else, return NULL
