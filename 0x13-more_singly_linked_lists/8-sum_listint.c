@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * sum_listint - a function that returns 
+ * sum_listint - a function that returns
  * the sum of all the data (n) in the list
  * @head: head node
  * Return: The number of nodes in h.
