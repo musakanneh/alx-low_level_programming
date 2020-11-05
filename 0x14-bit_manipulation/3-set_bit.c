@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * powX- powers a number b to the p's power
- * @b: base
- * @p: power
+ * _to_power - powers a number b to the p's power
+ * @base: base
+ * @power: power
  * Return: return b to the power of a
  */
 
