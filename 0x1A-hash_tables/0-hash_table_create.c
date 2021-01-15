@@ -14,23 +14,23 @@ hash_table_t *hash_table_create(unsigned long int size)
 	 * Validate the table and assign its size
 	 * Traverse the table and set its initial value to null
 	 */
-	hash_table_t *hash_table;
+	hash_table_t *ht;
 	unsigned long int i;
 
-	hash_table = malloc(sizeof(hash_table_t));
-	if (hash_table == NULL)
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
 	{
 		return (NULL);
 	}
-	hash_table->size = size;
-	hash_table->array = malloc(sizeof(hash_table_t *) * size);
-	if (hash_table->array == NULL)
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_table_t *) * size);
+	if (ht->array == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < size; i++)
 	{
-		hash_table->array[i] = NULL;
+		ht->array[i] = NULL;
 	}
-	return (hash_table);
+	return (ht);
 }
